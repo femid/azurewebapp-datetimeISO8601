@@ -93,7 +93,7 @@ resource "azurerm_source_control_token" "github_token" {
 resource "azurerm_app_service_source_control" "github_source" {
   app_id   = azurerm_app_service.webapp.id
   repo_url = var.repo_url
-  branch   = "master"
+  branch   = "main"
 }
 
 #get data from the webapp
