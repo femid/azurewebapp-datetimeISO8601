@@ -27,13 +27,13 @@ Steps to build the webapp
 
 5. "terraform plan out=deployplan" to create a deployment plan for the resources to be created/modified. 
 6. Enter variables as prompted:
-	- Azure SubscriptionID
-	- Resourcegroup Name
-	- Location
-	- App ServicePlan Name
-	- WebApp Name (4 digit random number will be auto-appended)
-	- GitHub URL (use the forked copy from your github repo)
+	- App ServicePlan name 
 	- GitHub PAT (needs "Read Public Repos" permission)
+	- Location (Azure region to host resources. E.g. South Central US, UK South, West Europe, Southeast Asia")
+	- GitHub URL (use the forked copy from your github repo)
+	- Resource Group name
+	- Azure Subscription ID
+	- WebApp Name (4 digit random number will be auto-appended)
 
 6. "terraform apply "deployplan"" to execute the stored plan and variables. 
 7. Note the hostname output at the end of the 'apply' process
@@ -46,5 +46,3 @@ To retrieve webapp content
 Remove the infrastructure
 -------------------------
 "terraform destroy" and re-enter the same variables used during the "terraform plan..." step
-
-
