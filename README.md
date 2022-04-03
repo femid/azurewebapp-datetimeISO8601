@@ -43,4 +43,8 @@ To retrieve webapp content:
 "curl <hostname>" or using PowerShell: "Invoke-WebRequest -Uri <hostname> | Select-Object Content"
 JSON Date output will be shown under the Content section
 
+Remove the infrastructure
+-------------------------
+"terraform destroy" and re-enter the same variables used during the plan state
+
 
