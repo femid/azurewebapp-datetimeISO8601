@@ -20,14 +20,12 @@ Navigate in PowerShell to directory containing the files above
 
 Steps to build the webapp
 -------------------------
-"az login" on administrative terminal & login via web prompt
-"az account show" to verify you are on the right tenant
+1. "az login" on administrative terminal & login via web prompt
+2. "az account show" to verify you are on the right tenant
+3. "terraform init" to initialize the directory & download the provider packages
+4. "terraform validate" to check if the config is valid
 
-"terraform init" to initialize the directory & download the provider packages
-"terraform fmt" to format any files if needed
-"terraform validate" to check if the config is valid
-
-"terraform plan out=deployplan" to create a deployment plan for the resources to be created/modified. Enter variables as prompted:
+5. "terraform plan out=deployplan" to create a deployment plan for the resources to be created/modified. Enter variables as prompted:
 - Azure SubscriptionID
 - Resourcegroup Name
 - Location
@@ -36,12 +34,13 @@ Steps to build the webapp
 - GitHub URL (use the forked copy from your github repo)
 - GitHub PAT (needs "Read Public Repos" permission)
 
-"terraform apply "deployplan"" to execute the stored plan and variables
-Note the hostname output at the end of the 'apply' process
+6. "terraform apply "deployplan"" to execute the stored plan and variables. 
+7. Note the hostname output at the end of the 'apply' process
 
-To retrieve webapp content:
+To retrieve webapp content
+--------------------------
 "curl <hostname>" or using PowerShell: "Invoke-WebRequest -Uri <hostname> | Select-Object Content"
-JSON Date output will be shown under the Content section
+- JSON Date output will be shown under the Content section
 
 Remove the infrastructure
 -------------------------
