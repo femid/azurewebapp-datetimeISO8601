@@ -1,0 +1,6 @@
+{
+    "name": "devops/ms",
+    "require": {
+        "php": "8.0.2"
+    }
+}
