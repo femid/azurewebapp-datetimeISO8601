@@ -40,7 +40,8 @@ Steps to build the webapp
 
 To retrieve webapp content
 --------------------------
-1. 'curl "hostname"' or using PowerShell: 'Invoke-WebRequest -Uri "hostname" | Select-Object Content'
+1. Wait for a few minutes for the github code deployment to complete on the webapp.
+2. Execute 'curl "hostname"' or using PowerShell: 'Invoke-WebRequest -Uri "hostname" | Select-Object Content'
 - 	Replace "hostname" with the output default_hostname from the 'terraform apply...' step
 -	JSON Date output will be shown under the Content section
 
