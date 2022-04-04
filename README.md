@@ -3,15 +3,14 @@ Deploys an Azure WebApp displaying JSON Output of Current Date in ISO 8601 forma
 
 Simple Web App deployment using Terraform
 =========================================
-This web application is built using an Azure App Service plan, an App Service (Linux) running a Python script to generate the ISO 8601 standard date in a JSON format. An Azure App Service was used as they are highly configurable & can use different coding stacks (.NET, PHP, Python, etc.). Python scripts require the use of at least a basic (B1) app service plan, as the free tier (Y1) is not currently supported. If lowest cost was desired, Azure Function Apps could be used to deploy the code instead.
+This web application is built using an Azure App Service plan, an App Service (Linux) running a Python script to generate the ISO 8601 standard date in a JSON format. An Azure App Service was used as they are highly configurable & can use different coding stacks (.NET, PHP, Python, etc.). Also the App Service will run continuously and respond quickly to web requests.
 
-
-Requirements:
+**Requirements:**
 - az cli 
 - Terraform executable
 - Github account with a Personal Access Token (PAT) to read public repos
 
-*Fork a copy of this Github repo & use the forked repo url & the "main" branch in your execution:*
+*Fork a copy of this Github repo & use the forked repo url & the "main" branch in your execution*
 
 Download the repo zipped files, then extract the two files in the `terraform` directory in a local directory:
 - `main.tf` and `variables.tf`
