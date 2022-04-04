@@ -1,9 +1,8 @@
 # simpleazurewebapp
-Deploys a WebApp displaying JSON Output of Current Date in ISO 8601 format
+Simple Web App deployment using Terraform
+=========================================
+Deploys an Azure WebApp displaying JSON Output of Current Date in ISO 8601 format
 
-
-Simple Web App Terraform Deployment
-===================================
 Requirements:
 - az cli 
 - Terraform executable
@@ -15,7 +14,7 @@ Requirements:
 Download the two files in the "terraform" directory & store them in a local directory:
 - main.tf and variables.tf
  
-Navigate in terminal to the directory containing the files above.
+Navigate in an (admin privleged) terminal to the directory containing the files above.
 
 Steps to build the webapp
 -------------------------
@@ -24,7 +23,7 @@ Steps to build the webapp
 3. 'terraform init' to initialize the directory & download the provider packages.
 4. 'terraform validate' to check if the config is valid.
 
-5. 'terraform plan out=deployplan' to create a deployment plan for the resources to be created/modified. 
+5. 'terraform plan out=deployplan' to create a deployment plan & output file for the resources to be created/modified. 
 6. Enter variables as prompted:
 	- App ServicePlan name 
 	- GitHub PAT (needs "Read Public Repos" permission)
