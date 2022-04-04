@@ -1,7 +1,10 @@
 # simpleazurewebapp
+Deploys an Azure WebApp displaying JSON Output of Current Date in ISO 8601 format
+
 Simple Web App deployment using Terraform
 =========================================
-Deploys an Azure WebApp displaying JSON Output of Current Date in ISO 8601 format
+This web application is built using an Azure App Service plan, an App Service (Linux) running a Python script to generate the ISO 8601 standard date in a JSON format. An Azure App Service was used as they are highly configurable & can use different coding stacks (.NET, PHP, Python, etc.). Python scripts require the use of at least a basic (B1) app service plan, as the free tier (Y1) is not currently supported. If lowest cost was desired, Azure Function Apps could be used to deploy the code instead.
+
 
 Requirements:
 - az cli 
