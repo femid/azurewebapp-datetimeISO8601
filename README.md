@@ -25,7 +25,7 @@ Steps to build the webapp
 3. 'terraform init' to initialize the directory & download the provider packages.
 4. 'terraform validate' to check if the config is valid.
 
-5. 'terraform plan out=deployplan' to create a deployment plan & output file for the resources to be created/modified. 
+5. 'terraform plan -out=deployplan' to create a deployment plan & output file for the resources to be created/modified. 
 6. Enter variables as prompted:
 	- App ServicePlan name 
 	- GitHub PAT (needs "Read Public Repos" permission)
