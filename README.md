@@ -11,8 +11,7 @@ Requirements:
 - Terraform executable
 - Github account with a Personal Access Token (PAT) to read public repos
 
-**Fork a copy of this Github repo & use the url & the "main" branch in your execution:**
- https://github.com/femid/simpleazurewebapp
+**Fork a copy of this Github repo & use the forked repo url & the "main" branch in your execution:**
 
 Download the two files in the "terraform" directory & store them in a local directory:
 - main.tf and variables.tf
