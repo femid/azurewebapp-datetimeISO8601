@@ -46,7 +46,7 @@ resource "random_integer" "rand_num" {
   max = 9999
 }
 
-/* Apr 2 2022 - Unable to set linux version in newer web app resource, using depracated app service below
+/* Apr 2 2022 - Unable to use "application_stack" block in newer "linux web app" resource, using deprecated app service below
 resource "azurerm_linux_web_app" "webapp" {
   name                = var.webapp_name
   resource_group_name = var.resource_group_name
@@ -65,9 +65,9 @@ resource "azurerm_linux_web_app" "webapp" {
 }
 */
 
-#create 'deprecated' app service with linux. Needed to set Python version
+#create 'deprecated' app service with linux. Needed to set Python stack in web app
 resource "azurerm_app_service" "webapp" {
-  #concat name with random number 
+  #concat name with random number for uniqueness
   name                = format("%s-%s", var.webapp_name, random_integer.rand_num.id) 
   location            = var.location
   resource_group_name = var.resource_group_name
