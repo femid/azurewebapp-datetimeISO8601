@@ -9,7 +9,7 @@ Requirements:
 - Terraform executable
 - Github account with a Personal Access Token (PAT) to read public repos
 
-Fork a copy of this Github repo & use the url & the "main" branch in your execution:
+**Fork a copy of this Github repo & use the url & the "main" branch in your execution:**
  https://github.com/femid/simpleazurewebapp
 
 Download the two files in the "terraform" directory & store them in a local directory:
@@ -35,13 +35,13 @@ Steps to build the webapp
 	- WebApp Name (4 digit random number will be auto-appended)
 
 6. 'terraform apply "deployplan"' to execute the stored plan and variables. 
-7. Note the hostname output at the end of the 'apply' process.
+7. **Note the hostname output at the end of the 'apply' process.**
 
 To retrieve webapp content
 --------------------------
-'curl "hostname"' or using PowerShell: 'Invoke-WebRequest -Uri "hostname" | Select-Object Content'
-- Replace "hostname" with the output default_hostname from the terraform apply step
-- JSON Date output will be shown under the Content section
+1. 'curl "hostname"' or using PowerShell: 'Invoke-WebRequest -Uri "hostname" | Select-Object Content'
+- 	Replace "hostname" with the output default_hostname from the 'terraform apply...' step
+-	JSON Date output will be shown under the Content section
 
 Remove the infrastructure
 -------------------------
