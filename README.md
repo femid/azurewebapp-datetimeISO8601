@@ -3,7 +3,7 @@ Deploys an Azure WebApp displaying JSON Output of Current Date in ISO 8601 forma
 
 Simple Web App deployment using Terraform
 =========================================
-This web application is built using an Azure App Service plan, an App Service (Linux) running a Python script to generate the ISO 8601 standard date in a JSON format. An Azure App Service was used as they are highly configurable & can use different coding stacks (.NET, PHP, Python, etc.). Also the App Service will run continuously and respond quickly to web requests.
+This web application is built using an Azure App Service plan, an App Service (Linux) running a Python script to generate the ISO 8601 standard date in a JSON format. An Azure App Service was used as they are highly configurable & can use different coding stacks (.NET, PHP, Python, etc.). Also the App Service will run continuously and respond quickly to web requests. Python was used to retrieve the date to continue my self development & ongoing learning of the language. 
 
 **Requirements:**
 - az cli 
